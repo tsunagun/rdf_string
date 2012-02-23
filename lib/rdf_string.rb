@@ -1,6 +1,7 @@
 require "rdf_string/version"
 require 'rdf_string/rdfa'
 require 'rdf_string/microdata'
+require 'rdf_string/rdfxml'
 require 'open-uri'
 require 'nokogiri'
 require 'rdf'
@@ -8,6 +9,7 @@ require 'rdf'
 module RDFString
 	include RDFa
 	include Microdata
+	include RDFXML
 	def self.define_filter(name)
 		define_method(name) do |*attr|
 			graph = RDF::Graph.new
@@ -18,5 +20,6 @@ module RDFString
 
 	define_filter "rdfa"
 	define_filter "microdata"
+	define_filter "rdfxml"
 
 end
