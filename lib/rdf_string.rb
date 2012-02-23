@@ -1,5 +1,5 @@
 require "rdf_string/version"
 
-module RdfString
+module RDFString
   # Your code goes here...
 end

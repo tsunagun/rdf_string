@@ -4,7 +4,7 @@ require "rdf_string/version"
 
 Gem::Specification.new do |s|
   s.name        = "rdf_string"
-  s.version     = RdfString::VERSION
+  s.version     = RDFString::VERSION
   s.authors     = ["tsuna"]
   s.email       = ["tsuna@slis.tsukuba.ac.jp"]
   s.homepage    = ""
