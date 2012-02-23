@@ -21,33 +21,33 @@ Dependencies
 
 Install
 ----------
-		git clone https://github.com/tsunagun/rdf_string.git
-		cd rdf_string
-		rake build
-		rake install
+	git clone https://github.com/tsunagun/rdf_string.git
+	cd rdf_string
+	rake build
+	rake install
 
 Examples
 ----------
-		require 'rdf_string'
-		class String
-			include RDFString
-		end
+	require 'rdf_string'
+	class String
+		include RDFString
+	end
 ### RDF Graph from RDFa
-		uri = "http://linter.structured-data.org/examples/google-rs/review.rdfa.html"
-		doc = open(uri).read
-		graph = doc.rdfa
+	uri = "http://linter.structured-data.org/examples/google-rs/review.rdfa.html"
+	doc = open(uri).read
+	graph = doc.rdfa
 ### RDF Graph from Microdata
-		uri = "http://linter.structured-data.org/examples/google-rs/review.md.html"
-		doc = open(uri).read
-		graph = doc.microdata
+	uri = "http://linter.structured-data.org/examples/google-rs/review.md.html"
+	doc = open(uri).read
+	graph = doc.microdata
 ### RDF Graph from RDFXML
-		uri = "http://ci.nii.ac.jp/nrid/9000017716145.rdf"
-		doc = open(uri).read
-		graph = doc.rdfxml
+	uri = "http://ci.nii.ac.jp/nrid/9000017716145.rdf"
+	doc = open(uri).read
+	graph = doc.rdfxml
 ### RDF Graph from DC-HTML
-		uri = "http://www.aozora.gr.jp/cards/000020/files/2569_28291.html"
-		doc = open(uri).read
-		graph = doc.dc_html
+	uri = "http://www.aozora.gr.jp/cards/000020/files/2569_28291.html"
+	doc = open(uri).read
+	graph = doc.dc_html
 
 Authors
 ----------
