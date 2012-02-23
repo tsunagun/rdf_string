@@ -4,6 +4,7 @@ require 'rdf_string/microdata'
 require 'rdf_string/rdfxml'
 require 'rdf_string/dc_html'
 require 'rdf_string/json/ld'
+require 'rdf_string/n3'
 require 'open-uri'
 require 'nokogiri'
 require 'rdf'
@@ -14,6 +15,7 @@ module RDFString
 	include RDFXML
 	include DCHTML
 	include JSON::LD
+	include N3
 	def self.define_filter(name)
 		define_method(name) do |*attr|
 			graph = RDF::Graph.new
@@ -26,5 +28,6 @@ module RDFString
 	define_filter "microdata"
 	define_filter "rdfxml"
 	define_filter "jsonld"
+	define_filter "n3"
 
 end

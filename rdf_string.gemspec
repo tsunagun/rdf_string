@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
 	s.add_runtime_dependency "rdf-microdata"
 	s.add_runtime_dependency "rdf-rdfxml"
 	s.add_runtime_dependency "json-ld"
+	s.add_runtime_dependency "rdf-n3"
 
   # specify any dependencies here; for example:
   # s.add_development_dependency "rspec"
