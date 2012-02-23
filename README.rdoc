@@ -40,3 +40,15 @@ This is a Ruby Library for extracting RDF Graph from a instance of String.
  uri = "http://www.aozora.gr.jp/cards/000020/files/2569_28291.html"
  doc = open(uri).read
  graph = doc.dc_html
+
+== Authors
+* [Tsunagu HONMA](http://github.com/tsunagun)
+
+== Acknowledgement
+I refer to [Structured Data Linter](https://github.com/structured-data/linter).
+I use his code to detect formats(RDFa, Microdata, RDF/XML).
+Thanks for all.
+
+== License
+This is free and unencumbered public domain software. For more information,
+see <http://unlicense.org/> or the accompanying {file:UNLICENSE} file.
