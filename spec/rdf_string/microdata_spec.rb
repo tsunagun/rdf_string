@@ -10,7 +10,7 @@ describe RDFString::Microdata do
 		end
 	end
 	describe 'microdata' do
-		subject { @str.microdata(@uri) }
+		subject { @str.microdata({:base_uri => @uri}) }
 		it "be triples" do
 			should have_at_least(1).triples
 		end

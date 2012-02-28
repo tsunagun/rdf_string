@@ -17,10 +17,10 @@ module RDFString
 	include JSON::LD
 	include N3
 	def self.define_filter(name)
-		define_method(name) do |*attr|
+		define_method(name) do |options={}|
 			graph = RDF::Graph.new
 			return graph unless send(name + "?")
-			graph << RDF::Reader.for(name.to_sym).new(self, :base_uri => attr[0])
+			graph << RDF::Reader.for(name.to_sym).new(self, options)
 		end
 	end
 

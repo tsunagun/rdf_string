@@ -10,7 +10,7 @@ describe RDFString::RDFa do
 		end
 	end
 	describe 'rdfa' do
-		subject { @str.rdfa(@uri) }
+		subject { @str.rdfa({:base_uri => @uri}) }
 		it "be triples" do
 			should have_at_least(1).triples
 		end

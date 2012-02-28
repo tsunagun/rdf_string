@@ -11,7 +11,7 @@ describe RDFString::RDFXML do
 		end 
 	end
 	describe "rdfxml" do
-		subject { @str.rdfxml(@uri) }
+		subject { @str.rdfxml({:base_uri => @uri}) }
 		it "be triples" do
 			should have_at_least(1).triples
 		end
