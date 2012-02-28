@@ -12,6 +12,8 @@ Supported Formats
 * Microdata
 * RDF/XML
 * DC-HTML (RFC2731)
+* N3 (isn't tested)
+* JSON-LD (isn't tested)
 
 Dependencies
 ----------
@@ -56,7 +58,7 @@ Authors
 Acknowledgement
 ----------
 I refer to [Structured Data Linter](https://github.com/structured-data/linter).
-I use his code to detect formats(RDFa, Microdata, RDF/XML).
+I use his code to detect formats(RDFa, Microdata, RDF/XML, and so on).
 Thanks for all.
 
 License
