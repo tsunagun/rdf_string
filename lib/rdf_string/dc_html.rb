@@ -1,7 +1,12 @@
+# -*- coding: UTF-8 -*-
 require 'rdf/rdfxml'
 module RDFString
+	# RFC2731準拠のメタデータを抽出するためのモジュール
+	# @see http://www.ietf.org/rfc/rfc2731.txt
 	module DCHTML
-		# RFC2731 http://www.ietf.org/rfc/rfc2731.txt
+	# DC-HTMLで記述されたメタデータを抽出
+	# @param [String] uri 抽出対象となるHTML文書のURI
+	# @return [RDF::Graph] DC-HTMLで記述されていたRDFグラフ
 		def dc_html(uri)
 			parser = Nokogiri::HTML.parse(self)
 			ns = Hash.new

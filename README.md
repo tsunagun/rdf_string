@@ -1,10 +1,10 @@
 RDF String
 ==========
-This is a Ruby Library for extracting RDF Graph from a instance of String.
+This is a Ruby Library for extracting RDF Graph from an instance of String.
 
 Features
 ----------
-Create RDF Graph (a instance of RDF::Graph by [RDF.rb](http://rdf.rubyforge.org/)) from a instance of String.
+Create RDF Graph (an instance of RDF::Graph by [RDF.rb](http://rdf.rubyforge.org/)) from an instance of String.
 
 Supported Formats
 ----------
