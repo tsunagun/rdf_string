@@ -1,3 +1,4 @@
+ちょっと追加
 RDF String
 ==========
 This is a Ruby Library for extracting RDF Graph from an instance of String.
